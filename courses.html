@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title> Courses</title>
+    <link rel="stylesheet" href="css/courses.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+     <!-- Sidebar-->
+     <div id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">&times;</a>
+        <div class="search">
+            <input type="text" placeholder="Search">
+            <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+        </div>
+
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="courses.html">Courses</a>
+        <a href="https://www.facebook.com/login/"><i class="fa-brands fa-facebook"></i> Facebook</a>
+        <a href="https://x.com/i/flow/login"><i class="fa-brands fa-twitter"></i> Twitter</a>
+        <a href="https://www.instagram.com/YourPageName/"><i class="fa-brands fa-instagram"></i> Instagram</a>
+        <a href="https://www.whatsapp.com"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+    </div>
+          <!---Navbar---->
+    <header>
+        <nav id="navbar" class="navbar">
+            <a href="index.html" class="logo">
+              <img src="images/logo-no-background.png" alt="logo">
+            </a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="courses.html">Courses</a></li>
+            </ul>
+            <div class="search">
+                <input type="text" id="searchInput" placeholder="Search">
+                <i class="fa-solid fa-magnifying-glass fa-lg" id="searchIcon"></i>
+            </div>
+            <span class="openbtn" onclick="openSidebar()">&#9776;</span>
+        </nav>
+    </header>
+    <main>
+        <section class="courses-section">
+            <div class="course-title">
+                <h4>Online Courses</h4>
+                <h1>Explore Our Courses list</h1>
+            </div>
+        </section>
+        <strong> Our teachers are dedicated professionals who inspire and guide students, fostering a love for learning.
+             They create a supportive environment that encourages growth and development.
+             Their commitment to education helps shape the future by empowering students with knowledge and skills. </strong>
+             
+        <p> <strong> Online courses,</strong>offer flexible and accessible learning opportunities, allowing individuals to study a wide range of subjects from anywhere in the world.
+             They are often self-paced, making it easy for learners to fit education into their schedules. Many online courses provide interactive elements like quizzes, discussion forums, and video lectures.
+              They can lead to certifications or degrees, enhancing career prospects.
+             Additionally, online courses are often more affordable than traditional in-person education, making them a popular choice for lifelong learning.</p>
+        <h2>Teachers</h2>
+        
+        <!-- Teachers Grid -->
+        <div class="teacher-grid">
+            <!-- Teacher 1 -->
+            <div class="teacher-card">
+                <img src="./images/teacher4.jpeg" alt="Anurag Sharma">
+                <h3>Anurag Sharma</h3>
+                <p><strong>Expert in Advanced Data Science</strong></p>
+                <p>(10+ years industry expert)</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com"><i class="fa-brands fa-facebook fa-lg" style="color: #020d16;"></i></a>
+                    <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin fa-lg" style="color: #020d16;"></i></a>
+                    <a href="https://www.twitter.com"><i class="fa-brands fa-twitter" style="color: #020d16;"></i></a>
+                </div>
+            </div>
+            
+            <!-- Teacher 2 -->
+            <div class="teacher-card">
+                <img src="./images/teacher4.jpeg" alt="Prakriti Verma">
+                <h3>Prakriti Verma</h3>
+                <p><strong>Expert in Web Development</strong></p>
+                <p>(7+ years industry expert)</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com"><i class="fa-brands fa-facebook fa-lg" style="color: #020d16;"></i></a>
+                    <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin fa-lg" style="color: #020d16;"></i></a>
+                    <a href="https://www.twitter.com"><i class="fa-brands fa-twitter" style="color: #020d16;"></i></a>
+                </div>
+            </div>
+            
+            <!-- Teacher 3 -->
+            <div class="teacher-card">
+                <img src="./images/teacher4.jpeg" alt="Pavan Kalyan">
+                <h3>Pavan Kalyan</h3>
+                <p><strong>Expert in Machine Learning</strong></p>
+                <p>(13+ years industry expert)</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com"><i class="fa-brands fa-facebook fa-lg" style="color: #020d16;"></i></a>
+                    <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin fa-lg" style="color: #020d16;"></i></a>
+                    <a href="https://www.twitter.com"><i class="fa-brands fa-twitter" style="color: #020d16;"></i></a>
+                </div>
+            </div>
+            
+            <!-- Teacher 4 -->
+            <div class="teacher-card">
+                <img src="./images/teacher4.jpeg" alt="Deepika">
+                <h3>Deepika</h3>
+                <p><strong>Expert in Marketing</strong></p>
+                <p>(9+ years industry expert)</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com"><i class="fa-brands fa-facebook fa-lg" style="color: #020d16;"></i></a>
+                    <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin fa-lg" style="color: #020d16;"></i></a>
+                    <a href="https://www.twitter.com"><i class="fa-brands fa-twitter" style="color: #020d16;"></i></a>
+                </div>
+            </div>
+            
+            <!-- Teacher 5 -->
+            <div class="teacher-card">
+                <img src="./images/teacher4.jpeg" alt="praveen">
+                <h3>Praveen</h3>
+                <p><strong>Expert in Node.js</strong></p>
+                <p>(10+ years industry expert)</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com"><i class="fa-brands fa-facebook fa-lg" style="color: #020d16;"></i></a>
+                    <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin fa-lg" style="color: #020d16;"></i></a>
+                    <a href="https://www.twitter.com"><i class="fa-brands fa-twitter" style="color: #020d16;"></i></a>
+                </div>
+                </div>
+                     <!-- Teacher 6 -->
+            <div class="teacher-card">
+                <img src="./images/teacher4.jpeg" alt="mahipal">
+                <h3>Mahipal Reddy</h3>
+                <p><strong>Expert in Python</strong></p>
+                <p>(10+ years industry expert)</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com"><i class="fa-brands fa-facebook fa-lg" style="color: #020d16;"></i></a>
+                    <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin fa-lg" style="color: #020d16;"></i></a>
+                    <a href="https://www.twitter.com"><i class="fa-brands fa-twitter" style="color: #020d16;"></i></a>
+                </div>
+            </div>
+
+                 </div>
+                </main>
+    
+                 <h1> Courses we offer</h1>                          
+                            <div class="course-grid">
+                                
+                                <!--- COURSE 1 -->
+                                <div class="course-card"> 
+                                  <img src="./images/webdevelops.jpg" alt="course1">
+                                  <h2> Data Science </h2>
+                                  <p>
+                                    Data science is a multidisciplinary field that combines statistics, computer science, <br>
+                                     domain expertise to extract insights and knowledge from data. It involves collecting, <br>
+                                      and interpreting data to inform decision-making and predict future trends. Techniques<br>
+                                       used in data science include machine learning, data mining, and data visualization. <br>
+
+                                  </p>
+                                
+                                  <p><strong> Instructor: </strong> Praveen </p>
+                                  <p><strong> Course Duration: </strong> 2 Months </p> <span id="dots1">...</span>
+                                  <span id="more1" style="display: none;">
+                                 
+                                   <p> <h2>Objectives</h2>
+                                    <ul>
+                                        <li>Understand the core concepts and techniques of data science.</li>
+                                        <li>Develop skills in data collection, cleaning, and preprocessing.</li>
+                                        <li>Learn to analyze and interpret data to generate actionable insights.</li>
+                                        <li>Gain proficiency in machine learning algorithms and their applications.</li>
+                                        <li>Acquire the ability to communicate findings effectively through data visualization.</li>
+                                        <li>Apply best practices in ethical data handling and privacy.</li>
+                                    </ul>
+                            
+                                    <h2>Prerequisites</h2>
+                                    <ul>
+                                        <li>Basic understanding of statistics and probability.</li>
+                                        <li>Proficiency in a programming language such as Python or R.</li>
+                                        <li>Familiarity with fundamental concepts of data analysis and visualization.</li>
+                                        <li>No prior experience in data science required, but a keen interest in the field is beneficial.</li>
+                                    </ul>
+                            
+                                    <h2>What You Will Learn in 2 Months</h2>
+                                    <ol>
+                                        <li><strong>Week 1-2:</strong> Introduction to Data Science and Python/R Basics
+                                            <ul class="sub-list">
+                                                <li>Overview of data science and its applications.</li>
+                                                <li>Getting started with Python or R for data science.</li>
+                                                <li>Basic programming concepts and data manipulation.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Week 3-4:</strong> Data Collection and Cleaning
+                                            <ul class="sub-list">
+                                                <li>Techniques for data collection and acquisition.</li>
+                                                <li>Data cleaning and preprocessing methods.</li>
+                                                <li>Handling missing values and outliers.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Week 5-6:</strong> Exploratory Data Analysis and Visualization
+                                            <ul class="sub-list">
+                                                <li>Exploratory Data Analysis (EDA) techniques.</li>
+                                                <li>Data visualization tools and libraries.</li>
+                                                <li>Creating and interpreting charts, graphs, and dashboards.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Week 7-8:</strong> Machine Learning and Model Deployment
+                                            <ul class="sub-list">
+                                                <li>Introduction to machine learning algorithms.</li>
+                                                <li>Building and evaluating predictive models.</li>
+                                                <li>Model deployment and monitoring in real-world scenarios.</li>
+                                                <li>Ethics and privacy considerations in data science.</li>
+                                            </ul>
+                                        </li>
+                                    </ol>
+                                   <h6> watch!! video to know more </h6>
+                                  <div class="video-container">
+                             <div class="video-thumbnail" data-video-id="-ETQ97mXXF0">
+                     <img src="https://img.youtube.com/vi/-ETQ97mXXF0/maxresdefault.jpg" alt="Educational Video">
+                      <div class="play-button">&#9658;</div>
+                      </div>
+                             </div>
+                                </span></p>
+
+                                <button onclick="toggleContent('dots1', 'more1', 'myBtn1')" id="myBtn1">Read more</button>
+                                <button onclick="openForm('dataScienceForm')" id="enrollBtn1">Enroll</button>
+                               </div>
+
+                                    <!-- Data Science Enrollment Form -->
+                            <div class="form-popup" id="dataScienceForm">
+                                <div class="form-container">
+                            <form onsubmit="return submitForm('dataScienceForm')">
+                                    
+                                     <h1>Enroll in Data Science Course </h1>
+                                    <label for="name-ds"><b>Name</b></label>
+                                     <input type="text" id="name-ds" name="name" placeholder="Enter your name" required>
+                                     <label for="email-ds"><b>Email</b></label>
+                                     <input type="email" id="email-ds" name="email" placeholder="Enter your email" required>
+                                      <label for="phone-ds"><b>Phone Number</b></label>
+                                    <input type="tel" id="phone-ds" 
+                                    name="phone"
+                                     placeholder="Enter your phone number" pattern="[0-9]{10}" required>
+                                    <button type="submit" class="btn">Submit</button>
+                                    <button type="button" class="btn cancel" onclick="closeForm('dataScienceForm')">Close</button>
+                                     </form>
+                                    </div>
+                                    <div id="dataScienceForm-thank-you" class="thank-you-message">
+                                        <p>Thank you for enrolling! our agent will get in touch with you soon.</p>
+                                      </div>
+                                       
+                                             </div>
+
+
+                                               <!----course 2-->
+
+
+
+                                               <div class="course-card">
+                                                <img src="./images/web-development-courses.jpeg" alt="course2">
+                                                <h2> Web Development </h2>
+                                                <p>
+                                                    Web Development refers to the overall process of creating websites or web applications, <br>
+                                                    Including the project's design, layout, coding, content creation, and functionality <br>
+                                                    It involves using a combination of programming languages, tools, and frameworks <br>
+                                                    to bring a website or web application to life.<br>
+                                                    Web development is now most used <br>
+                                                </p>
+                                                <p><strong> Instructor: </strong> Prakriti Sharma </p>
+                                                <p><strong> Course Duration:</strong> 3 months </p>
+                                                <span id="dots2">...</span>
+                                                <span id="more2" style="display: none;">
+                                                    <h2>Objectives</h2>
+                                                    <ul>
+                                                        <li>Gain a solid understanding of HTML, CSS, and JavaScript.</li>
+                                                        <li>Learn to create responsive and interactive web pages.</li>
+                                                        <li>Develop skills to build and deploy a full-featured website.</li>
+                                                        <li>Understand basic web development tools and workflows.</li>
+                                                        <li>Prepare for further study or entry-level web development positions.</li>
+                                                    </ul>
+                                                    <h2>Prerequisites</h2>
+                                                    <ul>
+                                                        <li>No prior web development experience required.</li>
+                                                        <li>Basic computer literacy and familiarity with using web browsers.</li>
+                                                        <li>Willingness to learn and engage with practical exercises.</li>
+                                                    </ul>
+                                                    <h2>What You Will Learn in 3 Months</h2>
+                                                    <ol>
+                                                        <li><strong>Month 1:</strong> Introduction to HTML and CSS
+                                                            <ul class="sub-list">
+                                                                <li><strong>Week 1:</strong> Introduction to HTML - structure, elements, and attributes.</li>
+                                                                <li><strong>Week 2:</strong> Advanced HTML - forms, tables, and semantic elements.</li>
+                                                                <li><strong>Week 3:</strong> Introduction to CSS - selectors, properties, and values.</li>
+                                                                <li><strong>Week 4:</strong> Advanced CSS - layouts (Flexbox, Grid), animations, and responsive design.</li>
+                                                            </ul>
+                                                        </li>
+                                                        <li><strong>Month 2:</strong> JavaScript Fundamentals
+                                                            <ul class="sub-list">
+                                                                <li><strong>Week 5:</strong> Introduction to JavaScript - syntax, variables, and data types.</li>
+                                                                <li><strong>Week 6:</strong> Control structures - loops, conditionals, and functions.</li>
+                                                                <li><strong>Week 7:</strong> DOM manipulation - selecting elements, event handling.</li>
+                                                                <li><strong>Week 8:</strong> Introduction to APIs - fetching and displaying data.</li>
+                                                            </ul>
+                                                        </li>
+                                                        <li><strong>Month 3:</strong> Building and Deploying a Project
+                                                            <ul class="sub-list">
+                                                                <li><strong>Week 9:</strong> Project planning - wireframes, user stories, and requirements gathering.</li>
+                                                                <li><strong>Week 10:</strong> Project development - implementing core features using HTML, CSS, and JavaScript.</li>
+                                                                <li><strong>Week 11:</strong> Testing and debugging - ensuring functionality and fixing issues.</li>
+                                                                <li><strong>Week 12:</strong> Deployment - setting up hosting, domain, and launching the project.</li>
+                                                            </ul>
+                                                        </li>
+                                                    </ol>
+                                                    <h6> watch!! video to know more </h6>
+                                                    <div class="video-container">
+                                                        <div class="video-thumbnail" data-video-id="Q33KBiDriJY">
+                                                            <img src="https://img.youtube.com/vi/Q33KBiDriJY/maxresdefault.jpg" alt="Educational Video">
+                                                            <div class="play-button">&#9658;</div>
+                                                        </div>
+                                                    </div>
+                                                </span>
+                                                </p>
+                                                <button onclick="toggleContent('dots2', 'more2', 'myBtn2')" id="myBtn2">Read more</button>
+                                                <button onclick="openForm('webDevForm')" id="enrollBtn2">Enroll</button>
+                                            </div>
+                                            
+                                            <!-- Web Development Enrollment Form -->
+                                            <div class="form-popup" id="webDevForm">
+                                                <div class="form-container" id="webDevForm-content">
+                                                    <form onsubmit="return submitForm('webDevForm')">
+                                                        <h1>Enroll in Web Development Course </h1>
+                                                        <label for="name-wd"><b>Name</b></label>
+                                                        <input type="text" id="name-wd" name="name" placeholder="Enter your name" required>
+                                                        <label for="email-wd"><b>Email</b></label>
+                                                        <input type="email" id="email-wd" name="email" placeholder="Enter your email" required>
+                                                        <label for="phone-wd"><b>Phone Number</b></label>
+                                                        <input type="tel" id="phone-wd" name="phone" placeholder="Enter your phone number" pattern="[0-9]{10}" required>
+                                                        <button type="submit" class="btn">Submit</button>
+                                                        <button type="button" class="btn cancel" onclick="closeForm('webDevForm')">Close</button>
+                                                    </form>
+                                                </div>
+                                                <div id="webDevForm-thank-you" class="thank-you-message">
+                                                    <p>Thank you for enrolling! our team will get in touch with you soon.</p>
+                                                </div>
+                                            </div>
+                                            
+
+
+                               <!-- COURSE 3 -->
+                                  <div class="course-card">
+                                    <img src="./images/digital-market-courses.jpeg" alt="course3">
+                                    <h2> Marketing </h2>
+                                    <p>
+                                        Digital marketing, also called online marketing,<br>
+                                        is the promotion of brands to connect with potential customers using the internet <br>
+                                        and other parts of and forms of digital communication. This includes not only media<br>
+                                        and web-based advertising, but also text and multimedia messages as marketing Channel <br>
+                                       
+                                    </p>
+                                    <p> <strong> Instructor: </strong> Deepika </p>
+                                    <p> <strong> Course Duration:</strong> 2 Months</p><span id="dots3">...</span>
+                                    <span id="more3" style="display: none;">
+
+                                      <p> <h2>Objectives</h2>
+                                        <ul>
+                                            <li>Understand core digital marketing concepts and strategies.</li>
+                                            <li>Develop skills in SEO, SEM, and content marketing.</li>
+                                            <li>Learn to create and manage effective social media campaigns.</li>
+                                            <li>Gain proficiency in analyzing digital marketing metrics and data.</li>
+                                            <li>Acquire the ability to design and implement email marketing strategies.</li>
+                                            <li>Apply best practices in digital marketing ethics and compliance.</li>
+                                        </ul>
+                                
+                                        <h2>Prerequisites</h2>
+                                        <ul>
+                                            <li>Basic understanding of marketing principles.</li>
+                                            <li>Familiarity with using digital tools and platforms.</li>
+                                            <li>No prior digital marketing experience required, but a keen interest in the field is beneficial.</li>
+                                        </ul>
+                                
+                                        <h2>What You Will Learn in 2 Months</h2>
+                                        <ol>
+                                            <li><strong>Week 1-2:</strong> Introduction to Digital Marketing and SEO
+                                                <ul class="sub-list">
+                                                    <li>Overview of digital marketing and its key components.</li>
+                                                    <li>Introduction to Search Engine Optimization (SEO).</li>
+                                                    <li>On-page and off-page SEO techniques.</li>
+                                                    <li>Keyword research and implementation.</li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>Week 3-4:</strong> SEM, Content Marketing, and Social Media
+                                                <ul class="sub-list">
+                                                    <li>Introduction to Search Engine Marketing (SEM) and Pay-Per-Click (PPC) advertising.</li>
+                                                    <li>Creating effective ad campaigns with Google Ads.</li>
+                                                    <li>Basics of content marketing and creating valuable content.</li>
+                                                    <li>Managing social media accounts and campaigns on platforms like Facebook, Instagram, and LinkedIn.</li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>Week 5-6:</strong> Data Analysis and Email Marketing
+                                                <ul class="sub-list">
+                                                    <li>Introduction to digital marketing analytics and key metrics.</li>
+                                                    <li>Using tools like Google Analytics to track and measure performance.</li>
+                                                    <li>Basics of email marketing and creating effective email campaigns.</li>
+                                                    <li>Segmenting audiences and measuring email campaign success.</li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>Week 7-8:</strong> Advanced Topics and Project
+                                                <ul class="sub-list">
+                                                    <li>Exploring advanced digital marketing strategies and tools.</li>
+                                                    <li>Implementing a comprehensive digital marketing campaign.</li>
+                                                    <li>Ethical considerations and compliance in digital marketing.</li>
+                                                    <li>Project work - applying learned skills to a real-world digital marketing project.</li>
+                                                </ul>
+                                            </li>
+                                        </ol>
+                                        <h6> watch!! video to know more </h6>
+                                        <div class="video-container">
+                                            <div class="video-thumbnail" data-video-id="s7sUDQni0LI">
+                                                <img src="https://img.youtube.com/vi/s7sUDQni0LI/maxresdefault.jpg" alt="Educational Video">
+                                                <div class="play-button">&#9658;</div>
+                                            </div>
+                                        </div>
+                                               
+                                    </span></p>
+                                    <button onclick="toggleContent('dots3', 'more3', 'myBtn3')" id="myBtn3">Read more</button>
+                                    <button onclick="openForm('MarketingForm')" id="enrollBtn3">Enroll</button>
+                                  </div>
+
+                                          <!-- Marketing Enrollment Form -->
+                                             <div class="form-popup" id="MarketingForm">
+                                                <div class="form-container" id="MarketingForm-content">
+                                                    <form onsubmit="return submitForm('MarketingForm')">
+                                                        <h1>Enroll in Marketing course</h1>
+                                                        <label for="name-mk"><b>name</b></label>
+                                                        <input type="text" id="name=mk" name="name" placeholder="Enter your name" required>
+                                                        <label for="email-mk"><b>Email</b></label>
+                                                        <input type="email" id="email-mk" name="email" placeholder="Enter your email" required>
+                                                        <label for="phone-mk"><p>Phone number</p></label>
+                                                        <input type="tel" id="phone-mk" name="phone" placeholder="Enter your phone number" pattern="[0-9]{10}" required>
+                                                        <button type="submit" class="btn">Submit</button>
+                                                        <button type="button" class="btn cancel" onclick="closeForm('MarketingForm')"> Close</button>
+
+                                                    </form>
+
+                                                </div>
+                                                <div id="MarketingForm-thank-you" class="thank-you-message">
+                                                    <p>
+                                                        Thank you for enrolling! our team will get in touch with you soon.  
+                                                    </p>
+
+                                                </div>
+
+                                             </div>
+                                      <!------ COURSE 4 ------->
+                                  <div class="course-card">
+                                    <img src="./images/machine-learning-courses.jpeg" alt="course4">
+                                     <h2> Machine Learning </h2>
+                                     <p>
+                                        Machine Learning (ML) is a type of Artificial Intelligence (AI)<br>
+                                        That Allows computers to learn without being explicitly programmed. <br>
+                                        without being explicitly programmed. It involves feeding data into <br>
+                                        algorithms that can then identify patterns and make predictions on new data. <br> 
+                                        machine learning is one of optimised languages
+                                        it was used in Ai Development  
+                                     </p>
+
+                                     <p> <strong> Instructor: </strong>  Pavan Kalyan </p>
+                                     <p> <strong> Course Duration: </strong> 3 Months </p> <span id="dots4">...</span>
+                                     <span id="more4" style="display: none;">
+
+                                        <p>         <h2>Objectives</h2>
+                                            <ul>
+                                                <li>Understand the fundamental concepts and techniques of machine learning.</li>
+                                                <li>Learn to prepare and preprocess data for machine learning models.</li>
+                                                <li>Develop skills in applying various machine learning algorithms.</li>
+                                                <li>Gain experience in evaluating model performance and tuning parameters.</li>
+                                                <li>Acquire the ability to apply machine learning models to real-world problems.</li>
+                                                <li>Learn best practices in model deployment and ethical considerations in machine learning.</li>
+                                            </ul>
+                                    
+                                            <h2>Prerequisites</h2>
+                                            <ul>
+                                                <li>Basic understanding of statistics and probability.</li>
+                                                <li>Proficiency in a programming language such as Python.</li>
+                                                <li>Familiarity with basic data manipulation and visualization techniques.</li>
+                                                <li>No prior machine learning experience required, but a keen interest in the field is beneficial.</li>
+                                            </ul>
+                                    
+                                            <h2>What You Will Learn in 3 Months</h2>
+                                            <ol>
+                                                <li><strong>Week 1-2:</strong> Introduction to Machine Learning and Data Preprocessing
+                                                    <ul class="sub-list">
+                                                        <li>Overview of machine learning concepts and workflows.</li>
+                                                        <li>Introduction to supervised and unsupervised learning.</li>
+                                                        <li>Data collection, cleaning, and preprocessing techniques.</li>
+                                                        <li>Exploratory Data Analysis (EDA) and feature engineering.</li>
+                                                    </ul>
+                                                </li>
+                                                <li><strong>Week 3-4:</strong> Supervised Learning Algorithms
+                                                    <ul class="sub-list">
+                                                        <li>Introduction to regression algorithms (e.g., Linear Regression, Polynomial Regression).</li>
+                                                        <li>Introduction to classification algorithms (e.g., Logistic Regression, K-Nearest Neighbors, Decision Trees).</li>
+                                                        <li>Model training, evaluation, and tuning.</li>
+                                                        <li>Handling overfitting and underfitting.</li>
+                                                    </ul>
+                                                </li>
+                                                <li><strong>Week 5-6:</strong> Unsupervised Learning and Model Evaluation
+                                                    <ul class="sub-list">
+                                                        <li>Introduction to clustering algorithms (e.g., K-Means, Hierarchical Clustering).</li>
+                                                        <li>Introduction to dimensionality reduction techniques (e.g., PCA).</li>
+                                                        <li>Model evaluation metrics and validation techniques.</li>
+                                                        <li>Cross-validation and hyperparameter tuning.</li>
+                                                    </ul>
+                                                </li>
+                                                <li><strong>Week 7-8:</strong> Advanced Topics and Project
+                                                    <ul class="sub-list">
+                                                        <li>Introduction to ensemble methods (e.g., Random Forest, Gradient Boosting).</li>
+                                                        <li>Basics of neural networks and deep learning.</li>
+                                                        <li>Project work - applying machine learning techniques to a real-world dataset.</li>
+                                                        <li>Model deployment considerations and ethical implications.</li>
+                                                    </ul>
+                                                </li>
+                                            </ol>
+                                            <h6> watch!! video to know more </h6>
+                                            <div class="video-container">
+                                                <div class="video-thumbnail" data-video-id="GwIo3gDZCVQ">
+                                                    <img src="https://img.youtube.com/vi/GwIo3gDZCVQ/maxresdefault.jpg" alt="Educational Video">
+                                                    <div class="play-button">&#9658;</div>
+                                                </div>
+                                            </div>
+                                        </span>
+                                        </p>
+
+                                        <button onclick="toggleContent('dots4', 'more4', 'myBtn4')" id="myBtn4">Read more</button>
+                                        <button onclick="openForm('MachineLearningForm')" id="enrollBtn4">Enroll</button>
+                                  </div>
+                                              <!---Marchinelearning Enrollment Form  --->
+                                              <div class="form-popup" id="MachineLearningForm">
+                                                <div class="form-container" id="MachineLearningForm-content">
+                                                    <form onsubmit="return submitForm('MachineLearningForm')">
+                                                        <h1>Enroll In Marketing Course</h1>
+                                                        <label for="name-Mc">Name</label>
+                                                        <input type="text" id="name-Mc" name="name" placeholder="Enter your name" required>
+                                                         <label for="email-Mc"> Email </label>
+                                                         <input type="email" id="email-Mc" name="email" placeholder="Enter your email" required>
+                                                         <label for="phone-Mc">Phone Number </label>
+                                                         <input type="tel" id="phone-Mc" name="phone" placeholder="Enter your phone number" pattern="[0-9]{10}" required>
+                                                         <button type="submit" class="btn">Submit</button>
+                                                         <button type="button" class="btn cancel" onclick="closeForm('MachineLearningForm')">Close</button>
+                                                    </form>
+                                                </div>
+                                                <div class="thank-you-message" id="MachineLearningForm-thank-you">
+
+                                                    <p>Thank you for enrolling! our team will get in touch with you soon.</p>
+
+                                                </div>
+                                              </div>
+
+
+                                        <!------ Course 5 ----->
+                                  <div class="course-card">
+                                    <img src="./images/Node js logo.jpeg" alt="Node.js Course">
+                                    <h2>Node.js</h2>
+                                    <p>
+                                        Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine.<br>
+                                         It enables developers to build scalable network applications using JavaScript on the server side.<br>
+                                          Node.js uses an event-driven, non-blocking I/O model, making <br>
+                                          it efficient and suitable for real-time applications.<br>
+                                          Learn about popular Node.js frameworks and libraries such as Express.js.
+                                    </p>
+                                
+                                    <p><strong>Instructor:</strong> Praveen </p>
+                                    <p><strong>Course Duration:</strong> 3 Months</p><span id="dots5">...</span>
+                                    <span id="more5" style="display: none;">
+                                        <h2>Objectives</h2>
+                                        <ul>
+                                            <li>Understand the core concepts of Node.js and its architecture.</li>
+                                            <li>Learn to build server-side applications using Node.js.</li>
+                                            <li>Develop skills in working with asynchronous programming and callbacks.</li>
+                                            <li>Gain experience in handling HTTP requests and building RESTful APIs.</li>
+                                            <li>Learn about popular Node.js frameworks and libraries such as Express.js.</li>
+                                            <li>Explore best practices for error handling, debugging, and deployment.</li>
+                                        </ul>
+                                
+                                        <h2>Prerequisites</h2>
+                                        <ul>
+                                            <li>Basic understanding of JavaScript and web development concepts.</li>
+                                            <li>Proficiency in HTML and CSS.</li>
+                                            <li>Experience with any JavaScript framework is beneficial but not required.</li>
+                                        </ul>
+                                
+                                        <h2>What You Will Learn in 3 Months</h2>
+                                        <ol>
+                                            <li><strong>Week 1-2:</strong> Introduction to Node.js and JavaScript Fundamentals
+                                                <ul class="sub-list">
+                                                    <li>Overview of Node.js and its use cases.</li>
+                                                    <li>Basics of Node.js modules and npm (Node Package Manager).</li>
+                                                    <li>JavaScript ES6+ features relevant to Node.js development.</li>
+                                                    <li>Creating simple Node.js applications.</li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>Week 3-4:</strong> Building Server-Side Applications
+                                                <ul class="sub-list">
+                                                    <li>Introduction to HTTP and creating servers with Node.js.</li>
+                                                    <li>Handling requests and responses in Node.js.</li>
+                                                    <li>Working with Express.js for building web applications.</li>
+                                                    <li>Integrating with databases (e.g., MongoDB or MySQL).</li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>Week 5-6:</strong> Asynchronous Programming and Error Handling
+                                                <ul class="sub-list">
+                                                    <li>Understanding callbacks, promises, and async/await.</li>
+                                                    <li>Error handling and debugging in Node.js applications.</li>
+                                                    <li>Testing Node.js applications.</li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>Week 7-8:</strong> Advanced Topics and Project
+                                                <ul class="sub-list">
+                                                    <li>Introduction to real-time applications with WebSockets.</li>
+                                                    <li>Working with third-party APIs and services.</li>
+                                                    <li>Project work - building a full-featured Node.js application.</li>
+                                                    <li>Deployment strategies and performance optimization.</li>
+                                                </ul>
+                                            </li>
+                                        </ol>
+                                        <h6> watch!! video to know more </h6>
+                                        <div class="video-container">
+                                            <div class="video-thumbnail" data-video-id="JnvKXcSI7yk">
+                                                <img src="https://img.youtube.com/vi/JnvKXcSI7yk/maxresdefault.jpg" alt="Educational Video">
+                                                <div class="play-button">&#9658;</div>
+                                            </div>
+                                        </div>
+                                        
+
+                                    </span>
+                                
+                                    <button onclick="toggleContent('dots5', 'more5', 'myBtn5')" id="myBtn5">Read more</button>
+                                    <button onclick="openForm('NodejsForm')" id="enrollBtn5">Enroll</button>
+                                </div>
+
+                                      <!--Node.js Enrollment Form -->
+                                      <div class="form-popup" id="NodejsForm">
+                                        <div class="form-container" id="NodejsForm-content">
+                                            <form onsubmit="return submitForm('NodejsForm')">
+                                                <h1>Enroll In Node.js Course </h1>
+                                                <label for="name-ns"><b>name</b></label>
+                                                <input type="text" id="name-ns" name="name"  placeholder="Enter your name" required>
+                                                <label for="email-ns"><b>Email</b> </label>
+                                                <input type="email" id="email-ns" name="email" placeholder="Enter your email" required>
+                                                <label for="phone-ns"><b>Phone number</b> </label>
+                                                <input type="tel" id="phone-ns" name="Phone" placeholder="Enter your phone" pattern="[0-9]{10}" required>
+                                                <button type="submit" class="btn">Submit</button>
+                                                <button type="button" class="btn cancel" onclick="closeForm('NodejsForm')">Close</button>
+
+                                            </form>
+                                            <div class="thank-you-message" id="NodejsForm-thank-you">
+                                                <p> Thank you for enrolling! our team will get in touch with you soon. </p>
+
+                                            </div>
+
+                                        </div>
+
+                                      </div>
+
+
+
+
+                                <!----- Course 6---->
+                                <div class="course-card">
+                                    <img src="./images/python-course.jpeg" alt="Python Course">
+                                    <h2>Python Course</h2>
+                                    <p>
+                                        Python is a high-level, interpreted programming language known for its simplicity and readability.<br>
+                                         It supports multiple programming paradigms, including procedural, object-oriented,<br>
+                                          and functional programming. Python is widely used in web development, data analysis, <br>
+                                          artificial intelligence, scientific computing, and automation.
+                                    </p>
+                                
+                                    <p><strong>Instructor:</strong> Gaddam Mahipal </p>
+                                    <p><strong>Course Duration:</strong> 3 Months</p>
+                                
+                                    <span id="dots6">...</span>
+                                    <span id="more6" style="display: none;">
+                                        <h2>Objectives</h2>
+                                        <ul>
+                                            <li>Understand Python programming fundamentals and syntax.</li>
+                                            <li>Learn to write and execute Python scripts for various applications.</li>
+                                            <li>Develop skills in working with data structures, algorithms, and libraries.</li>
+                                            <li>Gain experience in object-oriented programming and functional programming in Python.</li>
+                                            <li>Apply Python to real-world problems and projects in web development and data analysis.</li>
+                                            <li>Explore best practices for code quality, testing, and debugging in Python.</li>
+                                        </ul>
+                                
+                                        <h2>Prerequisites</h2>
+                                        <ul>
+                                            <li>Basic understanding of computer science concepts.</li>
+                                            <li>No prior programming experience required, though familiarity with another programming language is beneficial.</li>
+                                            <li>A keen interest in learning programming and problem-solving.</li>
+                                        </ul>
+                                
+                                        <h2>What You Will Learn in 3 Months</h2>
+                                        <ol>
+                                            <li><strong>Week 1-2:</strong> Introduction to Python Programming
+                                                <ul class="sub-list">
+                                                    <li>Overview of Python and its features.</li>
+                                                    <li>Setting up the Python environment and writing basic scripts.</li>
+                                                    <li>Understanding Python syntax, data types, and operators.</li>
+                                                    <li>Control flow: loops and conditional statements.</li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>Week 3-4:</strong> Working with Data Structures
+                                                <ul class="sub-list">
+                                                    <li>Introduction to lists, tuples, and dictionaries.</li>
+                                                    <li>Manipulating and iterating over data structures.</li>
+                                                    <li>Understanding sets and their operations.</li>
+                                                    <li>File handling and data persistence.</li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>Week 5-6:</strong> Object-Oriented and Functional Programming
+                                                <ul class="sub-list">
+                                                    <li>Understanding classes and objects in Python.</li>
+                                                    <li>Inheritance, encapsulation, and polymorphism.</li>
+                                                    <li>Introduction to functional programming concepts: lambda functions, map, filter, and reduce.</li>
+                                                    <li>Decorators and context managers.</li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>Week 7-8:</strong> Advanced Topics and Project
+                                                <ul class="sub-list">
+                                                    <li>Introduction to libraries and frameworks (e.g., Flask, Pandas, NumPy).</li>
+                                                    <li>Project work - developing a Python application or analyzing a dataset.</li>
+                                                    <li>Best practices for coding, testing, and debugging.</li>
+                                                    <li>Exploring real-world applications of Python.</li>
+                                                </ul>
+                                            </li>
+                                        </ol>
+
+                                        <h6> watch!! video to know more </h6>
+                                        <div class="video-container">
+                                   <div class="video-thumbnail" data-video-id="WGJJIrtnfpk">
+                           <img src="https://img.youtube.com/vi/WGJJIrtnfpk/maxresdefault.jpg" alt="Educational Video">
+                            <div class="play-button">&#9658;</div>
+                            </div>
+                                   </div>
+                                    </span>
+                                
+                                    <button onclick="toggleContent('dots6', 'more6', 'myBtn6')" id="myBtn6">Read more</button>
+                                    <button onclick="openForm('PythonProgrammingForm')" id="enrollBtn6">Enroll</button>
+                                </div>
+                                     <!--Python Enrollment Form -->
+                                     <div class="form-popup" id="PythonProgrammingForm">
+                                        <div class="form-container" id="PythonProgrammingForm-content">
+                                            <form onsubmit="return submitForm ('PythonProgrammingForm')">
+                                                <h1> Enroll In Python Course </h1>
+                                                <label for="name-py"><b>Name</b></label>
+                                                <input type="text" id="name-py" name="name" placeholder="Enter your name" required>
+                                                <label for="email-py"><b>Email</b></label>
+                                                <input type="email" id="email-py" name="name" placeholder="Enter your email" required>
+                                                <label for="phone-py"><b>Phone number</b></label>
+                                                <input type="tel" id="phone-py" name="phone" placeholder="Enter your phone number" pattern="[0-9]{10}" required>
+                                                <button type="submit" class="btn">Submit</button>
+                                                <button type="button" class="btn cancel" onclick="closeForm('PythonProgrammingForm')">Close</button>
+
+                                            </form>
+
+                                        </div>
+                                        <div class="thank-you-message" id="PythonProgrammingForm-thank-you">
+                                            <p> Thank you for enrolling! our team will get in touch with you soon. </p>
+
+                                        </div>
+
+                                     </div>
+                                
+                                  </div>
+
+                                 <!--Chat bot starts from here --> 
+
+           <div id="chatbot-icon" onclick="toggleChatbot()">
+             <i class="fa-solid fa-message fa-lg"></i>
+        </div>
+    
+    
+        <div id="chatbot">
+            <div id="chat-window">
+                <div id="messages"></div>
+            </div>
+            <i class="fa-solid fa-robot fa-2xl"></i>
+            <input id="user-input" type="text" placeholder="Type a message...">
+            <button id="send-btn">Send</button>
+        </div> 
+
+        
+        <footer>
+            <div class="footer-container">
+                <div class="footer-section">
+                     <h3> SUBSCRIBE </h3>
+                    <label class="logo">
+                        <img src="images/logo-no-background.png" alt="logo">
+                      </label>
+
+                    <form>
+                    <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+                    <button type="submit">Subscribe</button>
+                    </form>
+
+                </div>
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p> Help Center </p>
+                    <p> Read More </p>
+                    <p> Apply Now </p>
+                    <p> Reach Us </p>
+                
+                </div>
+               <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Email:  Birthquestacademy@gmail.com</p>
+                    <p>Phone: +123456789</p>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <p><a href="https://www.facebook.com/login/"><i class="fa-brands fa-facebook fa-xl"></i></a></p>
+                    <p><a href="https://x.com/i/flow/login"><i class="fa-brands fa-twitter fa-xl"></i></a></p>
+                    <p><a href="https://www.instagram.com/YourPageName/"><i class="fa-brands fa-instagram fa-xl"></i></a></p>
+                    <p><a href="https://www.whatsapp.com"><i class="fa-brands fa-whatsapp fa-xl"></i></a></p>
+                </div>
+                <div class="footer-section">
+                     <h3> Services </h3>
+                     <p> Events </p>
+                     <p> News </p>
+                     <p> Awards </p>
+                </div>
+                <div class="footer-section">
+                      <h3> Buy </h3>
+                      <p> Where to Buy </p>
+                      <p> Prices of Courses </p>
+                      <p> Low Prices </p>
+
+                </div>
+                <div class="footer-section">
+                  <h3> Help </h3>
+                  <p> FAQ </p>
+                  <p> Terms & Conditions </p>
+                  <p> Support </p>
+                </div>
+                <div class="footer-section">
+                   <h3> Resources </h3>
+                    <p> Security </p>
+                    <p> Global </p>
+                    <p> Giving Back</p>
+
+
+                </div>
+                </div>
+            <div class="footer-copy">
+                <p>&copy; 2024 Birthquestacademy. All rights reserved.</p>
+            </div>
+        </footer>
+    <script src="Script.js"></script>
+</body>
+</html>

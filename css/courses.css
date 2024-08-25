@@ -1,0 +1,650 @@
+:root {
+    --primary-color: #4A7766;
+    --secondary-color: white;
+    --accent-color: #1A4862;
+    --text-color: #476075;
+    --heading-color: #000;
+}
+
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    header{
+        z-index: 1;
+    }
+}
+ 
+ 
+
+
+body {
+    background-color: aliceblue;
+    color: var(--text-color);
+    background-image: url(../images//logo-no-background2.png);
+   
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    flex-wrap: wrap;
+    transition: margin-left 0.3s;
+}
+
+
+
+.logo img {
+    height: 50px; 
+    width: auto; 
+    max-width: 100%;
+}
+
+
+
+.navbar .logo {
+    margin-right: 20px; 
+}
+
+
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    font-weight: 400;
+    line-height: 80px;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 1.2rem;
+    padding: 0 10px;
+    text-decoration: none;
+}
+
+.navbar .search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 200px; 
+}
+
+.navbar .search input {
+    padding: 5px 10px;
+    font-size: 0.875rem;
+    padding-right: 35px;
+    width: 100%;
+}
+
+.navbar .search i {
+    position: absolute;
+    right: 2px;
+    cursor: pointer;
+    color: var(--text-color);
+    margin-top: 10px;
+}
+
+
+.openbtn{
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--primary-color);
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+    z-index: 1000;
+    display: none;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: #f1f1f1;
+}
+
+
+.sidebar .search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 200px; 
+}
+
+.sidebar .search input {
+    padding: 5px 10px;
+    font-size: 0.875rem; 
+    padding-right: 35px;
+    width: 100%;
+}
+
+.sidebar .search i {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    color: black;
+}
+
+
+
+.navbar .openbtn {
+    font-size: 30px; 
+    cursor: pointer;
+    color: white; 
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+
+.navbar .openbtn:hover {
+  color: white; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+main {
+    color: #000;
+}
+
+h2 {
+    text-align: center;
+    color: #004b6b;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+
+/* Teacher Grid Styles */
+.teacher-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 90px;
+    justify-content: center;
+}
+
+.teacher-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    margin-left: 0;
+    position: relative;
+}
+
+h4{
+    text-align: center;
+    font-size: 2.5vw;
+    margin: 0.5em 0;
+    color: rebeccapurple;
+}
+h1,h2  {
+    text-align: center;
+    font-size: 2rem;
+    color: #25a362;
+}
+
+.teacher-card img {
+    display: block;
+   max-width: 100%;
+   margin: 0 auto;
+    height: auto;
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+}
+
+.teacher-card img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.teacher-card h3 {
+    font-weight: 600;
+}
+
+/* Course Grid Styles */
+.course-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+   align-content: center;
+   justify-content: center;
+   margin: 0 auto;
+  
+}
+
+.course-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+    position: relative;
+    /*margin-left: 50px;*/
+    margin: 0;
+}
+
+.course-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.course-card img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.course-card h2 {
+    font-weight: 600;
+    overflow-wrap: break-word;
+    white-space: normal
+}
+
+.course-card h6{
+    font-style: italic;
+    font-weight: 600;
+    font-size: large;
+    color: var(--primary-color);
+}
+
+.course-card p {
+    margin: 10px 0;
+    overflow-wrap: break-word;
+    white-space: normal
+}
+
+.course-card ul {
+    list-style: disc;
+    margin: 10px 0;
+    padding: 0 20px;
+}
+
+.course-card ol {
+    list-style: decimal;
+    margin: 10px 0;
+    padding: 0 20px;
+}
+
+.course-card .sub-list {
+    list-style: circle;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: #f1f1f1;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 5px;
+    overflow-wrap: break-word;
+    white-space: normal
+}
+
+button:hover {
+    background-color: #575757;
+}
+
+/* youtube thumbnail video styles*/
+#videoModal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.video-thumbnail {
+    position: relative;
+    cursor: pointer;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.video-thumbnail img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    padding: 10px;
+    color: white;
+    font-size: 24px;
+    pointer-events: none;
+}
+
+
+#chatbot-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 50px; 
+    color: #d2691e;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+#chatbot-icon:hover {
+    color: #25a362; 
+}
+
+/* Chatbot Window */
+#chatbot {
+    position: fixed;
+    background-image: url(../images/logo-no-background2.png);
+    bottom: 90px; 
+    right: 20px;
+    width: 300px;
+    border: 1px solid #ccc;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+#chat-window {
+    height: 300px;
+    padding: 10px;
+    overflow-y: scroll;
+}
+
+#messages {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: var(--secondary-color);
+}
+
+#user-input {
+    width: 75%;
+    margin-top: auto;
+    padding: 10px;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+#send-btn {
+    width: 25%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#send-btn:hover {
+    background-color: var(--text-color);
+}
+
+.fa-2xl {
+    font-size: 2rem;
+    color: #d2691e;
+}
+
+
+ /* Popup form styles */
+ .form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 28px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+    width: 300px;
+    background-color: aliceblue;
+    
+  }
+
+  .form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+    position: relative;
+  }
+
+  .form-container input[type=text], .form-container input[type=email], .form-container input[type=tel] {
+    width: 90%;
+    padding: 5px;
+    height: 20px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+
+  .form-container input[type=text]:focus, .form-container input[type=email]:focus, .form-container input[type=tel]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+
+  .form-container .btn {
+    background-color: green;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+  }
+
+  .form-container .cancel {
+    background-color: red;
+  }
+
+  .form-container .btn:hover {
+    opacity: 1;
+  }
+
+
+  .error {
+    color: red;
+    font-size: 0.875em;
+    margin: 0;
+    padding: 0;
+  }
+
+
+  .form-content {
+    display: block;
+}
+
+/* Thank you message style */
+.thank-you-message {
+    display: none;
+    background-color: #dff0d8; 
+    color: #3c763d;
+    padding: 15px;
+
+    text-align: center;
+    border: 1px solid #d6e9c6; 
+    border-radius: 5px;
+    position: absolute;
+    bottom: 10px; 
+    left: 50%; 
+    transform: translateX(-50%);
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    flex: 1 1 200px;
+}
+
+.footer-section,
+.footer-social {
+    flex: 1 1 300px;
+    margin: 10px;
+    color: #fff;
+}
+
+.footer-section h3,
+.footer-social h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.footer-section ul {
+    color: white;
+}
+
+.footer-section ul li,
+.footer-section p {
+    margin-bottom: 10px;
+    color: floralwhite;
+   
+    
+}
+
+.footer-social p {
+    display: inline; 
+    color: white;
+}
+
+.footer-section ul li a,
+.footer-social p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section input{
+    padding: 10px;
+    margin-bottom: 1px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+
+.footer-copy {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #010102;
+    color: white;
+}
+
+
+
+@media screen and (max-width: 768px) { 
+    .navbar ul {
+        display: none;
+    }
+    .openbtn {
+        display: block;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+    h4{
+        font-size: 4vw;
+    }
+    .teacher-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .teacher-card {
+       margin: 0 auto;
+       max-width: 100%;
+    }
+    .course-card {
+        max-width: 90%; /* Adjust the card width for small screens */
+    }
+}
+
+
+

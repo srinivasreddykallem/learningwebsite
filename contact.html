@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contact </title>
+   
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!--- Css file-->
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+
+     <!-- Sidebar -->
+     <div id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()" aria-label="Close sidebar">&times;</a>
+
+        <div class="search">
+            <input type="text" placeholder="Search">
+            <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+        </div>
+
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="courses.html">Courses</a>
+        <a href="https://www.facebook.com/login/"><i class="fa-brands fa-facebook"></i> Facebook</a>
+        <a href="https://x.com/i/flow/login"><i class="fa-brands fa-twitter"></i> Twitter</a>
+        <a href="https://www.instagram.com/YourPageName/"><i class="fa-brands fa-instagram"></i> Instagram</a>
+        <a href="https://www.whatsapp.com"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+    </div>
+      <!--navbar -->
+    <header>
+        <nav id="navbar" class="navbar">
+            <a href="index.html" class="logo">
+              <img src="images/logo-no-background.png" alt="E-Learning Img">
+            </a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="courses.html">Courses</a></li>
+            </ul>
+            <div class="search">
+                <input type="text" name="query" placeholder="Search">
+                <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+            </div>
+            <span class="openbtn" onclick="openSidebar()">&#9776;</span>
+        </nav>
+    </header>
+    <!--Contact-info Starts from here -->
+    <main>
+        <section class="contact-info">
+            <h2> Get In Touch </h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <div class="icon-circle">
+            <i class="fa-solid fa-location-dot fa-2xl"></i>
+               </div>
+               <h3> ADDRESS </h3>
+               <h4> Academy Group </h4>
+               <p><strong> 69750 Street Road </strong></p>
+               <p> Benguluru, CO 80112</p>
+               <h4> Chennai Zone Office </h4>
+               <p><strong> 744566 Street Road </strong></p>
+               <p> Center Block 6578</p>
+               <h4> Mumbai Zone Office</h4>
+               <p> <strong> 456789 Street Road </strong> </p>
+               <p> 3rd block Centre Block </p>
+               <h4> Hyderabad Office </h4>
+               <p><strong>  Orient Mall 508753 </strong></p>
+               <p> New block, 234567</p>   
+               </div>
+                <div class="info-item">
+                    <div class="icon-circle">
+                    <i class="fa-solid fa-phone fa-2xl"></i>  
+                </div> 
+                    <h3> PHONE </h3>             
+                    <h4> Academy Group </h4>
+                    <p> <strong> Phone: +01234567890 </strong> </p>
+                    <h4> E-Learning 24/7 </h4>
+                    <p> <strong> Phone: +1234567890 </strong></p>
+                    <p> ( then press 0 for immediate contact )</p>
+                    <h4> Chennai Zone Office </h4>
+                    <p> <strong> Phone: +1234567890 </strong></p>
+                    <h4> Mumbai Zone Office </h4>
+                    <p><strong> Phone: +2345678901 </strong> </p>
+                    <h4> Hyderabad Office </h4>
+                    <p> <strong>  Phone: +3456789012 </strong> </p>
+                   </div> 
+                   <div class="info-item">
+                    <div class="icon-circle">
+                    <i class="fa-solid fa-envelope fa-2xl"></i>
+                    </div>
+                     <h3> Mail Us </h3>
+                     <p><strong>Request For Proposal</strong></p>
+                     <p> birth-quest544@gmail.com </p>
+                     <p><strong> Emergency Mail </strong></p>
+                     <p> birth-quest2@gmail.com</p>
+                    <p><strong> Employment Opportunites </strong></p>
+                     <p> birth-quest.resume@gmail.com </p>
+
+                   </div>
+                </div>
+              </section>
+              <section class="message-us">
+
+                <h2> Message-Us </h2>
+                <p> if you wish to join in BirthQuest Academy Please contact us through this contact form.<br>
+                    For Employment in BirthQuest Academy Please dont send message here instead, please <br>
+                    complete BirthQuest Academy Job application and our Human Resources team will contact you.
+                </p>
+                 <form>
+                    <label for="name"> Name* </label>
+                    <input type="text" id="name" name="name"  placeholder="Name" required>
+                    <br>
+                    <label for="email"> Email* </label>
+                    <input type="email" id="email" name="email" placeholder="example@gmail.com" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                    <br>
+                    <label for="comments"> Comments </label>
+                    <textarea id="comments" name="comments" placeholder="Message"></textarea>
+                    <button type="submit">Submit</button>
+                    
+                </form>
+                
+              </section>
+             
+              </main>
+                <!---Chatbot section -->
+
+              <div id="chatbot-icon" onclick="toggleChatbot()">
+                <i class="fa-solid fa-message fa-lg"></i>
+            </div>
+        
+        
+            <div id="chatbot">
+                <div id="chat-window">
+                    <div id="messages"></div>
+                </div>
+                <i class="fa-solid fa-robot fa-2xl"></i>
+                <input id="user-input" type="text" placeholder="Type a message...">
+                <button id="send-btn">Send</button>
+            </div>
+
+              <footer>
+                <div class="footer-container">
+                    <div class="footer-section">
+                         <h3> SUBSCRIBE </h3>
+                        <label class="logo">
+                            <img src="images/logo-no-background.png" alt="logo">
+                          </label>
+
+                        <form>
+                        <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+                        <button type="submit">Subscribe</button>
+                        </form>
+
+                    </div>
+                    <!--Footer starts from here-->
+                    <div class="footer-section">
+                        <h3>About Us</h3>
+                        <ul>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Read More</a></li>
+                            <li><a href="#">Apply Now</a></li>
+                            <li><a href="#">Reach Us</a></li>
+                        </ul>
+                    </div>
+                   <div class="footer-section">
+                        <h3>Contact Us</h3>
+                        <p>Email: Birthquestacademy@gmail.com</p>
+                        <p>Phone: +123456789</p>
+                    </div>
+                    <div class="footer-social">
+                        <h3>Follow Us</h3>
+                        <p><a href="https://www.facebook.com/login/"><i class="fa-brands fa-facebook fa-xl"></i></a></p>
+                        <p><a href="https://x.com/i/flow/login"><i class="fa-brands fa-twitter fa-xl"></i></a></p>
+                        <p><a href="https://www.instagram.com/YourPageName/"><i class="fa-brands fa-instagram fa-xl"></i></a></p>
+                        <p><a href="https://www.whatsapp.com"><i class="fa-brands fa-whatsapp fa-xl"></i></a></p>
+                    </div>
+                    <div class="footer-section">
+                         <h3> Services </h3>
+                         <p> Events </p>
+                         <p> News </p>
+                         <p> Awards </p>
+                    </div>
+                    <div class="footer-section">
+                          <h3> Buy </h3>
+                          <p> Where to Buy </p>
+                          <p> Prices of Courses </p>
+                          <p> Low Prices </p>
+
+                    </div>
+                    <div class="footer-section">
+                      <h3> Help </h3>
+                      <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Terms&Conditions</a></li>
+                        <li><a href="#">Support</a></li>
+                       </ul>
+                    </div>
+                    <div class="footer-section">
+                       <h3> Resources </h3>
+                        <p> Security </p>
+                        <p> Global </p>
+                        <p> Giving Back</p>
+
+
+                    </div>
+                    </div>
+                <div class="footer-copy">
+                    <p>&copy; 2024 Birthquestacademy. All rights reserved.</p>
+                </div>
+            </footer>
+
+           <script src="Script.js"></script>
+
+</body>
+</html>
