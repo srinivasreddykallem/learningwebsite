@@ -75,7 +75,7 @@ function addMessage(message) {
 
 // Bot reply script
 function getBotResponse(input) {
-    // Convert input to lowercase to make the comparison case-insensitive
+    
     input = input.toLowerCase();
 
     if (input.includes("hello")) {
@@ -115,12 +115,12 @@ function toggleContent(dotsId, moreId, btnId) {
         dots.style.display = "inline";
         btnText.innerHTML = "Read more";
         moreText.style.display = "none";
-        console.log('view less clicked');
+        console.log('Read less clicked');
     } else {
         dots.style.display = "none";
         btnText.innerHTML = "Read less";
         moreText.style.display = "inline";
-        console.log('view more clicked');
+        console.log('Read more clicked');
     }
 
     
@@ -149,7 +149,7 @@ function openForm(formId) {
     }
 }
 
-// Function to close a specific form
+
 function closeForm(formId) {
     const formElement = document.getElementById(formId);
     if (formElement) {
@@ -160,7 +160,7 @@ function closeForm(formId) {
     }
 }
 
-// Function to handle form submission
+
 function submitForm(formId) {
     const form = document.getElementById(formId).querySelector('form');
     const formContent = document.getElementById(`${formId}-content`);
@@ -201,11 +201,9 @@ function submitForm(formId) {
         closeForm(formId);
     }, 3000); 
 
-    // Form Reset after submission for new inputs
-    form.reset();
+    form.reset();  
     console.log('Form reset done');
-
-    // Prevent form submission
+    
     return false;
 }
 
