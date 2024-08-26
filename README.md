@@ -6,7 +6,7 @@ BirthQuest Academy is an e-learning platform designed to provide a seamless lear
 ## Table of Contents
 
 1. **[Features](#features)**  
-   Explore the main functionalities of the BirthQuest Academy e-learning website, such as course listings, feedback sections, and responsive design.
+   Explore the main functionalities of the BirthQuest Academy e-learning website, such as course listings, Contact page, about sections, and responsive design.
 
 2. **[Technologies Used](#technologies-used)**  
    A list of the technologies used to develop the BirthQuest Academy website, including HTML, CSS, and JavaScript, and how they contribute to the site's functionality and appearance.
@@ -23,11 +23,6 @@ BirthQuest Academy is an e-learning platform designed to provide a seamless lear
 6. **[Contributing](#contributing)**  
    Information on how to contribute to the BirthQuest Academy project, including guidelines for submitting issues, coding standards, and how to create pull requests.
 
-7. **[License](#license)**  
-   Details about the licensing under which the BirthQuest Academy e-learning website is released, ensuring users understand the terms of use, distribution, and modification.
-
-8. **[Contact](#contact)**  
-   Contact details for the BirthQuest Academy team, providing a way for users or developers to reach out for support, questions, or collaboration opportunities.
 
 
 ## Features
@@ -56,10 +51,11 @@ Since this is a static website, there is no need for a complex installation proc
 3. Open `index.html` in your browser to view the website.
 
 ## Usage
-- The website is divided into multiple sections such as courses, feedback, and contact information.
+- The website is divided into multiple sections such as courses, about, and contact information.
 - Users can navigate through the website using the navigation bar.
 - The "Contact Us" form includes validation to ensure that all fields are correctly filled before submission.
 - The "courses page" has detail about courses and added responsive enroll form to recieve user data.
+- The chatbot is responsive it works very well.
 
 ## Project Structure
 project-root/
