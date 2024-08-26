@@ -31,6 +31,9 @@ BirthQuest Academy is an e-learning platform designed to provide a seamless lear
 - about page with responsive design
 - Contact Us page with form validation
 - Sidebar with social media links and contact information
+- Enroll Form with form validatiion
+- chatbot with responsive resopnses
+  
 
 ## Technologies Used
 - **HTML**: For structuring the web pages.
